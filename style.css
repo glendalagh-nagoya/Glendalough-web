@@ -1,0 +1,1177 @@
+﻿/* ========================================
+   RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #111510;
+    color: #eee9dc;
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.8;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* ========================================
+   COLOR VARIABLES
+======================================== */
+
+:root {
+
+    --forest: #17251d;
+    --forest-light: #26382c;
+
+    --dark: #111510;
+    --dark-light: #1a1e1a;
+
+    --brown: #30271e;
+
+    --gold: #b89a5b;
+    --gold-light: #d1b878;
+
+    --ivory: #eee9dc;
+    --muted: #aaa99e;
+
+    --border: rgba(238, 233, 220, 0.15);
+
+}
+
+
+/* ========================================
+   COMMON
+======================================== */
+
+.container {
+    width: min(1180px, 90%);
+    margin: 0 auto;
+}
+
+.section {
+    padding: 120px 0;
+}
+
+.section-heading {
+    margin-bottom: 70px;
+}
+
+.section-heading.center {
+    text-align: center;
+}
+
+.section-label {
+    color: var(--gold);
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    margin-bottom: 15px;
+}
+
+.section-heading h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(2.8rem, 5vw, 5rem);
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.section-heading > p:last-child {
+    color: var(--muted);
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: rgba(17, 21, 16, 0.85);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+    width: min(1400px, 94%);
+    margin: 0 auto;
+
+    height: 82px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.logo {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.15em;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.logo span {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 0.45rem;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+}
+
+.nav {
+    display: flex;
+    gap: 28px;
+    margin-left: auto;
+}
+
+.nav a {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: var(--gold);
+}
+
+.header-button {
+    border: 1px solid var(--gold);
+
+    color: var(--gold);
+
+    padding: 9px 18px;
+
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+
+    transition: 0.3s;
+}
+
+.header-button:hover {
+    background: var(--gold);
+    color: var(--dark);
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero {
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(12, 18, 13, 0.45),
+            rgba(12, 18, 13, 0.85)
+        ),
+        url("images/hero.jpg")
+        center / cover no-repeat;
+
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            transparent 20%,
+            rgba(0, 0, 0, 0.55)
+        );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: min(900px, 90%);
+}
+
+.hero-subtitle {
+    color: var(--gold);
+
+    font-size: 0.8rem;
+
+    letter-spacing: 0.4em;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(4rem, 10vw, 9rem);
+
+    font-weight: 500;
+
+    letter-spacing: 0.08em;
+
+    line-height: 0.9;
+
+    margin-bottom: 35px;
+}
+
+.hero-description {
+    font-size: 1rem;
+    color: #e1ded4;
+
+    margin-bottom: 45px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* ========================================
+   BUTTON
+======================================== */
+
+.button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 52px;
+
+    padding: 0 28px;
+
+    font-size: 0.8rem;
+
+    letter-spacing: 0.12em;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.button-gold {
+    background: var(--gold);
+    color: var(--dark);
+}
+
+.button-gold:hover {
+    background: var(--gold-light);
+}
+
+.button-outline {
+    border: 1px solid rgba(238, 233, 220, 0.6);
+    color: var(--ivory);
+}
+
+.button-outline:hover {
+    background: var(--ivory);
+    color: var(--dark);
+}
+
+.button-dark {
+    background: var(--forest);
+    color: var(--ivory);
+}
+
+.button-dark:hover {
+    background: var(--gold);
+    color: var(--dark);
+}
+
+
+/* ========================================
+   SCROLL INDICATOR
+======================================== */
+
+.scroll-indicator {
+    position: absolute;
+
+    bottom: 30px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: var(--muted);
+
+    font-size: 0.6rem;
+
+    letter-spacing: 0.3em;
+}
+
+.scroll-indicator div {
+    width: 1px;
+    height: 45px;
+
+    background: var(--gold);
+
+    margin: 8px auto 0;
+}
+
+
+/* ========================================
+   ABOUT
+======================================== */
+
+.about {
+    background: var(--dark);
+}
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.1fr
+        0.9fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.image-placeholder {
+    background:
+        linear-gradient(
+            135deg,
+            #26352a,
+            #101510
+        );
+
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: rgba(238, 233, 220, 0.35);
+
+    letter-spacing: 0.2em;
+
+    font-size: 0.7rem;
+}
+
+.about-text {
+    color: var(--muted);
+}
+
+.about-text .lead {
+    color: var(--ivory);
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 1.7rem;
+
+    line-height: 1.5;
+
+    margin-bottom: 30px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+.text-link {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    color: var(--gold);
+
+    font-size: 0.85rem;
+
+    border-bottom: 1px solid var(--gold);
+
+    padding-bottom: 4px;
+}
+
+
+/* ========================================
+   MUSIC
+======================================== */
+
+.music {
+    background: var(--forest);
+}
+
+.music-player {
+    max-width: 950px;
+
+    margin: 0 auto 35px;
+}
+
+.video-placeholder {
+    aspect-ratio: 16 / 9;
+
+    background:
+        linear-gradient(
+            135deg,
+            #314638,
+            #111610
+        );
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.play-button {
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+
+    background: var(--gold);
+
+    color: var(--dark);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.4rem;
+
+    padding-left: 4px;
+}
+
+.video-placeholder p {
+    color: rgba(238, 233, 220, 0.5);
+
+    font-size: 0.75rem;
+
+    letter-spacing: 0.15em;
+}
+
+.music-tags {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.music-tags span {
+    border: 1px solid var(--border);
+
+    padding: 8px 15px;
+
+    font-size: 0.7rem;
+
+    color: var(--muted);
+}
+
+
+/* ========================================
+   LIVE
+======================================== */
+
+.live {
+    background: #e8e4d9;
+
+    color: #1a1d19;
+}
+
+.live .section-label {
+    color: #8c713e;
+}
+
+.live .section-heading > p:last-child {
+    color: #66685f;
+}
+
+.event-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.event-card {
+    background: #f5f2e9;
+}
+
+.event-image {
+    min-height: 260px;
+}
+
+.event-content {
+    padding: 30px;
+}
+
+.event-date {
+    color: #8c713e;
+
+    font-size: 0.7rem;
+
+    letter-spacing: 0.15em;
+
+    margin-bottom: 10px;
+}
+
+.event-content h3 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 1.7rem;
+
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    margin-bottom: 15px;
+}
+
+.event-content p:last-child {
+    color: #686b64;
+
+    font-size: 0.85rem;
+}
+
+.center-button {
+    text-align: center;
+
+    margin-top: 50px;
+}
+
+
+/* ========================================
+   PERFORMANCE
+======================================== */
+
+.performance {
+    background:
+        linear-gradient(
+            rgba(17, 21, 16, 0.94),
+            rgba(17, 21, 16, 0.98)
+        ),
+        url("images/forest.jpg")
+        center / cover fixed;
+}
+
+.performance .section-heading {
+    max-width: 800px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.performance-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 1px;
+
+    background: var(--border);
+
+    margin-bottom: 100px;
+}
+
+.performance-item {
+    background: rgba(23, 37, 29, 0.75);
+
+    padding: 45px 25px;
+
+    text-align: center;
+}
+
+.performance-icon {
+    color: var(--gold);
+
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+}
+
+.performance-item h3 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 1.3rem;
+
+    letter-spacing: 0.05em;
+
+    margin-bottom: 12px;
+}
+
+.performance-item p {
+    color: var(--muted);
+
+    font-size: 0.8rem;
+}
+
+
+/* ========================================
+   BOOKING FLOW
+======================================== */
+
+.booking-flow {
+    margin-bottom: 80px;
+}
+
+.booking-flow > h3 {
+    text-align: center;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 1.8rem;
+
+    font-weight: 400;
+
+    margin-bottom: 40px;
+}
+
+.flow {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.flow-item {
+    text-align: center;
+
+    min-width: 150px;
+}
+
+.flow-item span {
+    display: block;
+
+    color: var(--gold);
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 2rem;
+
+    margin-bottom: 5px;
+}
+
+.flow-item strong {
+    font-size: 0.75rem;
+
+    font-weight: 400;
+
+    white-space: nowrap;
+}
+
+.flow-line {
+    width: 60px;
+
+    height: 1px;
+
+    background: var(--gold);
+
+    opacity: 0.5;
+}
+
+
+/* ========================================
+   PERFORMANCE CTA
+======================================== */
+
+.performance-cta {
+    text-align: center;
+
+    border: 1px solid var(--border);
+
+    padding: 70px 30px;
+}
+
+.performance-cta h3 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+
+    font-weight: 400;
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+}
+
+.performance-cta p {
+    color: var(--muted);
+
+    margin-bottom: 30px;
+}
+
+
+/* ========================================
+   GALLERY
+======================================== */
+
+.gallery {
+    background: var(--dark);
+}
+
+.gallery-grid {
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr;
+
+    grid-auto-rows: 250px;
+
+    gap: 10px;
+}
+
+.gallery-item {
+    min-height: 250px;
+}
+
+.gallery-large {
+    grid-row: span 2;
+}
+
+.gallery-wide {
+    grid-column: span 2;
+}
+
+.gallery-item:nth-child(2) {
+    background: #243329;
+}
+
+.gallery-item:nth-child(3) {
+    background: #1c281f;
+}
+
+.gallery-item:nth-child(4) {
+    background: #30271e;
+}
+
+.gallery-item:nth-child(5) {
+    background: #26382c;
+}
+
+
+/* ========================================
+   SOCIAL
+======================================== */
+
+.social {
+    background: var(--forest);
+}
+
+.social-links {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.social-link {
+    border: 1px solid var(--border);
+
+    padding: 25px;
+
+    text-align: center;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 1.3rem;
+
+    transition: 0.3s;
+}
+
+.social-link:hover {
+    background: var(--gold);
+
+    color: var(--dark);
+
+    border-color: var(--gold);
+}
+
+
+/* ========================================
+   CONTACT
+======================================== */
+
+.contact {
+    background:
+        linear-gradient(
+            rgba(18, 23, 18, 0.95),
+            rgba(18, 23, 18, 0.98)
+        );
+}
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns:
+        0.8fr 1.2fr;
+
+    gap: 100px;
+}
+
+.contact-intro h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(3rem, 5vw, 5rem);
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    margin-bottom: 30px;
+}
+
+.contact-intro p {
+    color: var(--muted);
+
+    margin-bottom: 20px;
+}
+
+
+/* ========================================
+   FORM
+======================================== */
+
+.contact-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.75rem;
+
+    letter-spacing: 0.1em;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid var(--border);
+
+    color: var(--ivory);
+
+    padding: 15px;
+
+    font-family: inherit;
+
+    outline: none;
+
+    transition: border 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--gold);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-button {
+    border: none;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    margin-top: 10px;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+    background: #0b0e0b;
+
+    text-align: center;
+
+    padding: 70px 0 30px;
+}
+
+.footer-logo {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 2rem;
+
+    letter-spacing: 0.15em;
+}
+
+.footer > .container > p:first-of-type {
+    color: var(--gold);
+
+    font-size: 0.65rem;
+
+    letter-spacing: 0.2em;
+
+    margin-top: 5px;
+}
+
+.footer-nav {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    margin: 40px 0;
+}
+
+.footer-nav a {
+    color: var(--muted);
+
+    font-size: 0.65rem;
+
+    letter-spacing: 0.1em;
+
+    transition: 0.3s;
+}
+
+.footer-nav a:hover {
+    color: var(--gold);
+}
+
+.copyright {
+    color: #555950;
+
+    font-size: 0.65rem;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 1000px) {
+
+    .nav {
+        display: none;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .event-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .performance-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .section {
+        padding: 80px 0;
+    }
+
+
+    /* HEADER */
+
+    .header-inner {
+        height: 70px;
+    }
+
+    .header-button {
+        padding: 8px 12px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 90vh;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+
+        letter-spacing: 0.04em;
+    }
+
+    .hero-subtitle {
+        font-size: 0.6rem;
+
+        letter-spacing: 0.25em;
+    }
+
+    .hero-description {
+        font-size: 0.85rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .hero-buttons .button {
+        width: 100%;
+    }
+
+
+    /* ABOUT */
+
+    .image-placeholder {
+        min-height: 350px;
+    }
+
+
+    /* EVENTS */
+
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* PERFORMANCE */
+
+    .performance-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .flow {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .flow-line {
+        width: 1px;
+
+        height: 35px;
+    }
+
+
+    /* GALLERY */
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+
+        grid-auto-rows: 180px;
+    }
+
+    .gallery-large {
+        grid-row: span 2;
+    }
+
+    .gallery-wide {
+        grid-column: span 2;
+    }
+
+
+    /* SOCIAL */
+
+    .social-links {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* CONTACT */
+
+    .contact-intro h2 {
+        font-size: 3.5rem;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .header-button {
+        font-size: 0.6rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .hero h1 {
+        font-size: 3.2rem;
+    }
+
+    .section-heading h2 {
+        font-size: 2.8rem;
+    }
+
+    .social-links {
+        grid-template-columns: 1fr;
+    }
+
+}
