@@ -1,815 +1,1041 @@
 ﻿<!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
 
-    <!-- スマートフォン対応 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-    <title>Glendalough | Celtic Music from Nagoya</title>
+    <title>Glendalough | Celtic Traditional Music</title>
 
-    <meta
-        name="description"
-        content="Glendaloughは、アイルランドの伝統音楽を中心に、幻想的な世界を奏でる名古屋発のケルト音楽ユニットです。"
-    >
+    <meta name="description"
+        content="Glendaloughは、アイルランド・スコットランド・フランス等の伝統音楽を中心に演奏する音楽ユニット。イベント、マーケット、文化祭、店舗イベントなどへの出演依頼を承っています。">
+
+    <meta name="keywords"
+        content="Glendalough, ケルト音楽, アイリッシュ音楽, アイルランド音楽, スコットランド音楽, フランス伝統音楽, 名古屋, ライブ, 出演依頼">
+
+    <meta name="theme-color" content="#101510">
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
-        rel="stylesheet"
-    >
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Noto+Serif+JP:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="style.css">
 </head>
+
 
 <body>
 
-<!-- ========================================
-     HEADER
-======================================== -->
+    <!-- =========================
+         HEADER
+    ========================== -->
 
-<header class="header">
+    <header class="header">
 
-    <div class="header-inner">
+        <div class="header-inner">
 
-        <a href="#home" class="logo">
-            GLENDALOUGH
-            <span>Celtic Music from Nagoya</span>
-        </a>
+            <a href="#home"
+                class="logo">
 
-        <nav class="nav">
+                <span class="logo-main">
+                    GLENDALOUGH
+                </span>
+
+                <span class="logo-sub">
+                    CELTIC TRADITIONAL MUSIC
+                </span>
+
+            </a>
+
+
+            <!-- Desktop Navigation -->
+
+            <nav class="nav">
+
+                <a href="#about">ABOUT</a>
+
+                <a href="#music">MUSIC</a>
+
+                <a href="#performance">PERFORMANCE</a>
+
+                <a href="#works">WORKS</a>
+
+                <a href="#gallery">GALLERY</a>
+
+                <a href="#contact"
+                    class="nav-contact">
+                    CONTACT
+                </a>
+
+            </nav>
+
+
+            <!-- Hamburger -->
+
+            <button class="menu-button"
+                id="menuButton"
+                aria-label="メニューを開く">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+
+        <nav class="mobile-nav"
+            id="mobileNav">
+
             <a href="#about">ABOUT</a>
+
             <a href="#music">MUSIC</a>
-            <a href="#live">LIVE</a>
+
             <a href="#performance">PERFORMANCE</a>
+
+            <a href="#works">WORKS</a>
+
             <a href="#gallery">GALLERY</a>
+
             <a href="#contact">CONTACT</a>
+
         </nav>
 
-        <a href="#contact" class="header-button">
-            出演依頼
-        </a>
-
-    </div>
-
-</header>
+    </header>
 
 
-<main>
 
-<!-- ========================================
-     HERO
-======================================== -->
-
-<section id="home" class="hero">
-
-    <div class="hero-overlay"></div>
-
-    <div class="hero-content">
-
-        <p class="hero-subtitle">
-            CELTIC MUSIC FROM NAGOYA
-        </p>
-
-        <h1 style="text-align: center;">
-   GLENDALOUGH
-        </h1>
-
-        <p class="hero-description">
-            アイルランドの伝統音楽を中心に、<br>
-            幻想的な世界を奏でるケルト音楽ユニット。
-        </p>
-
-        <div class="hero-buttons">
-
-            <a href="#contact" class="button button-gold">
-                出演依頼・お問い合わせ
-            </a>
-
-            <a href="#music" class="button button-outline">
-                音楽を聴く
-            </a>
-
-        </div>
-
-    </div>
-
-    <div class="scroll-indicator">
-        <span>SCROLL</span>
-        <div></div>
-    </div>
-
-</section>
+    <main>
 
 
-<!-- ========================================
-     INTRODUCTION
-======================================== -->
+        <!-- =========================
+             HERO
+        ========================== -->
 
-<section id="about" class="section about">
+        <section id="home"
+            class="hero">
 
-    <div class="container">
+            <div class="hero-background"></div>
 
-        <div class="section-heading">
-
-            <p class="section-label">
-                ABOUT GLENDALOUGH
-            </p>
-
-            <h2>
-                森の向こうから<br>
-                聴こえてくる音楽。
-            </h2>
-
-        </div>
+            <div class="hero-overlay"></div>
 
 
-        <div class="about-grid">
+            <div class="hero-content">
 
-            <img src="images/1000198320.jpg"
-                <alt="Glendalough about">
-            </div>
-
-            <div class="about-text">
-
-                <p class="lead">
-                    Glendaloughは、アイルランドの伝統音楽を中心に
-                    演奏するケルト音楽ユニットです。
+                <p class="hero-eyebrow">
+                    CELTIC TRADITIONAL MUSIC
                 </p>
 
-                <p>
-                    フィドルやアコーディオン、マンドリン、ブズーキなどの
-                    アコースティック楽器を通して、
-                    アイルランドの音楽が持つ躍動感や美しさ、
-                    そして静かな物語性を届けています。
+
+                <h1>
+                    GLENDALOUGH
+                </h1>
+
+
+                <p class="hero-copy">
+                    Music that whispers<br>
+                    from the mist of the Celtic lands.
                 </p>
 
-                <p>
-                    街のイベントからマーケット、フェスティバル、
-                    パーティーまで、さまざまな場所で
-                    音楽をお届けします。
-                </p>
 
-                <a href="#performance" class="text-link">
-                    Glendaloughについて詳しく見る →
+                <a href="#contact"
+                    class="button button-primary">
+
+                    出演を依頼する
+
+                    <span>→</span>
+
                 </a>
 
             </div>
 
-        </div>
 
-    </div>
+            <div class="hero-scroll">
 
-</section>
+                <span>
+                    SCROLL
+                </span>
 
+                <div class="scroll-line"></div>
 
-<!-- ========================================
-     MUSIC
-======================================== -->
+            </div>
 
-<section id="music" class="section music">
-
-    <div class="container">
-
-        <div class="section-heading center">
-
-            <p class="section-label">
-                MUSIC
-            </p>
-
-            <h2>
-                Listen to Glendalough
-            </h2>
-
-            <p>
-                ケルト音楽のリズムと旋律を、あなたのもとへ。
-            </p>
-
-        </div>
+        </section>
 
 
-        <div class="music-player">
 
-  <div class="youtube-shorts">
-    <iframe
-        src="https://www.youtube.com/embed/-btG-2M4QXQ"
-        title="Glendalough YouTube Shorts"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-    </iframe>
-</div>
-                <p>
+        <!-- =========================
+             ABOUT
+        ========================== -->
 
-</div>
-                </p>
-            
-        </div>
+        <section id="about"
+            class="section about-section">
 
+            <div class="container">
 
-        <div class="music-tags">
+                <div class="section-heading reveal">
 
-            <span>Traditional Irish Music</span>
-            <span>Jigs</span>
-            <span>Reels</span>
-            <span>Polkas</span>
-            <span>Slow Airs</span>
+                    <span class="section-number">
+                        01
+                    </span>
 
-        </div>
+                    <div>
 
-    </div>
+                        <p class="section-label">
+                            ABOUT
+                        </p>
 
-</section>
+                        <h2>
+                            A JOURNEY<br>
+                            THROUGH MUSIC
+                        </h2>
 
+                    </div>
 
-<!-- ========================================
-     LIVE
-======================================== -->
-
-<section id="live" class="section live">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <p class="section-label">
-                LIVE & EVENTS
-            </p>
-
-            <h2>
-                音楽が生まれる場所。
-            </h2>
-
-        </div>
-
-
-        <div class="event-grid">
-
-<article class="event-card">
-
-                <img src="images/20260910kdjapon.jpg">
-                <alt="2026.9.10KDハポン">
                 </div>
 
-                <div class="event-content">
 
-                    <p class="event-date">
-                        2026.09.10
-                    </p>
+                <div class="about-grid">
 
-                    <h3>
-                        ギルド～ケルト音楽×オールドタイム～
-                    </h3>
-                    <p>                       
-<h4>出演者紹介</h4>
-<hr />
-<h5>Black Mountain Ramblers</h5>
-<p>ケルト音楽のルーツともいわれるアメリカン・オールドタイムミュージックを演奏するバンド。<br />
-フィドル、バンジョー、コントラバスが織りなす素朴で力強いサウンドをお楽しみください。
-<hr />
-</p>
-<h5>Parfilion</h5>
-<p>幻想的な世界観と美しい歌声で物語を紡ぐシンガー。
-ケルトや北欧、ファンタジーの空気を感じさせるオリジナル楽曲と演奏をお届けします。</p>
-                    </p>
-<hr />
+                    <div class="about-text reveal">
+
+                        <p class="lead">
+                            音楽を通して、
+                            ケルトの風景を。
+                        </p>
+
+
+                        <p>
+                            Glendaloughは、アイルランド・
+                            スコットランド・フランス等の
+                            伝統音楽を中心に演奏する
+                            音楽ユニットです。
+                        </p>
+
+
+                        <p>
+                            ケルト音楽に息づく美しい旋律、
+                            軽やかなダンスチューン、
+                            そしてどこか懐かしさを感じる
+                            素朴な響き。
+                        </p>
+
+
+                        <p>
+                            会場に訪れた人々が、
+                            ほんの少し日常を離れ、
+                            音楽の旅へ出かけるような
+                            時間を届けます。
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-image reveal">
+
+                        <img src="images/performance.jpg"
+                            alt="Glendalough traditional music performance">
+
+                        <div class="image-caption">
+                            MUSIC ・ MIST ・ MEMORY
+                        </div>
+
+                    </div>
+
                 </div>
 
-            </article>
-            <article class="event-card">
+            </div>
 
-                <img src="images/glendalagh01.png"
-                <alt="KITTE名古屋">
-                   
-                </div>
+        </section>
 
-                <div class="event-content">
 
-                    <p class="event-date">
-                        2026.08.08
+
+        <!-- =========================
+             MUSIC
+        ========================== -->
+
+        <section id="music"
+            class="section music-section">
+
+            <div class="container">
+
+                <div class="section-heading centered reveal">
+
+                    <span class="section-number">
+                        02
+                    </span>
+
+                    <p class="section-label">
+                        MUSIC
                     </p>
 
-                    <h3>
-                        KITTE名古屋
-                        喜々快々な夏祭り
-                    </h3>
+                    <h2>
+                        TRADITIONAL<br>
+                        SOUNDS
+                    </h2>
+
+                    <p class="section-intro">
+                        アイルランド・スコットランド・
+                        フランス等の伝統音楽を中心に、
+                        ケルト音楽の持つ多彩な表情を
+                        お届けします。
+                    </p>
+
+                </div>
+
+
+                <div class="music-cards">
+
+
+                    <article class="music-card reveal">
+
+                        <div class="music-icon">
+                            ♪
+                        </div>
+
+                        <h3>
+                            AIRS
+                        </h3>
+
+                        <p>
+                            静かで美しい旋律。
+                            会場を包み込むような
+                            穏やかな音楽。
+                        </p>
+
+                    </article>
+
+
+                    <article class="music-card reveal">
+
+                        <div class="music-icon">
+                            ?
+                        </div>
+
+                        <h3>
+                            DANCE TUNES
+                        </h3>
+
+                        <p>
+                            Reels、Jigs、Polkasなど、
+                            躍動感あふれるダンスチューン。
+                        </p>
+
+                    </article>
+
+
+                    <article class="music-card reveal">
+
+                        <div class="music-icon">
+                            ?
+                        </div>
+
+                        <h3>
+                            TRADITIONAL
+                        </h3>
+
+                        <p>
+                            古くから受け継がれてきた
+                            ヨーロッパ各地の伝統音楽。
+                        </p>
+
+                    </article>
+
+                </div>
+
+
+                <!-- Video -->
+
+                <div class="video-area reveal">
+
+                    <div class="video-heading">
+
+                        <p class="section-label">
+                            VIDEO
+                        </p>
+
+                        <h3>
+                            MUSIC IN MOTION
+                        </h3>
+
+                    </div>
+
+
+                    <div class="video-grid">
+
+
+                        <!-- YouTube Short -->
+
+                        <div class="youtube-short">
+
+                            <iframe
+                                src="https://www.youtube.com/embed/-btG-2M4QXQ?si=GJL0K1WZPnysIp-C"
+                                title="Glendalough YouTube Short"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen>
+                            </iframe>
+
+                        </div>
+
+
+                        <div class="video-description">
+
+                            <p>
+                                音楽と映像を通して、
+                                Glendaloughの世界を
+                                お楽しみください。
+                            </p>
+
+
+                            <a href="https://www.youtube.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-link">
+
+                                YouTubeで動画を見る
+                                <span>→</span>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             PERFORMANCE
+        ========================== -->
+
+        <section id="performance"
+            class="section performance-section">
+
+
+            <div class="performance-background"></div>
+
+
+            <div class="performance-overlay"></div>
+
+
+            <div class="container performance-container">
+
+                <div class="performance-content reveal">
+
+                    <span class="section-number">
+                        03
+                    </span>
+
+                    <p class="section-label">
+                        PERFORMANCE
+                    </p>
+
+                    <h2>
+                        MUSIC FOR<br>
+                        YOUR EVENT
+                    </h2>
+
+
+                    <p class="performance-lead">
+                        あなたのイベントに、<br>
+                        ケルトの風を。
+                    </p>
+
 
                     <p>
-                        名古屋の街にケルト音楽を届ける
-                        夏のイベント。
+                        イベント、マーケット、文化祭、
+                        店舗イベント、パーティーなど、
+                        様々なシーンに合わせた演奏を
+                        ご相談いただけます。
+                    </p>
+
+
+                    <a href="#contact"
+                        class="button button-light">
+
+                        出演について相談する
+
+                        <span>→</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             WORKS
+        ========================== -->
+
+        <section id="works"
+            class="section works-section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">
+                        04
+                    </span>
+
+                    <div>
+
+                        <p class="section-label">
+                            WORKS
+                        </p>
+
+                        <h2>
+                            WHERE WE<br>
+                            HAVE PLAYED
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="works-grid">
+
+
+                    <article class="work-item reveal">
+
+                        <img src="images/works01.jpg"
+                            alt="Glendalough live performance">
+
+                        <div class="work-info">
+
+                            <span>
+                                LIVE PERFORMANCE
+                            </span>
+
+                            <h3>
+                                イベント・フェスティバル
+                            </h3>
+
+                            <p>
+                                様々なイベントでの
+                                ケルト音楽ライブ。
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="work-item reveal">
+
+                        <img src="images/works02.jpg"
+                            alt="Glendalough outdoor performance">
+
+                        <div class="work-info">
+
+                            <span>
+                                OUTDOOR EVENT
+                            </span>
+
+                            <h3>
+                                マーケット・屋外イベント
+                            </h3>
+
+                            <p>
+                                街や公園など、
+                                開放的な空間での演奏。
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="work-item reveal">
+
+                        <img src="images/works03.jpg"
+                            alt="Glendalough music event">
+
+                        <div class="work-info">
+
+                            <span>
+                                CULTURAL EVENT
+                            </span>
+
+                            <h3>
+                                文化・地域イベント
+                            </h3>
+
+                            <p>
+                                伝統音楽を通して
+                                異文化に触れる時間を。
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             GALLERY
+        ========================== -->
+
+        <section id="gallery"
+            class="section gallery-section">
+
+            <div class="container">
+
+                <div class="section-heading centered reveal">
+
+                    <span class="section-number">
+                        05
+                    </span>
+
+                    <p class="section-label">
+                        GALLERY
+                    </p>
+
+                    <h2>
+                        MOMENTS
+                    </h2>
+
+                    <p class="section-intro">
+                        実際の演奏風景をご覧ください。
                     </p>
 
                 </div>
 
-            </article>
+
+                <div class="gallery-grid">
 
 
-            <article class="event-card">
+                    <div class="gallery-item gallery-large reveal">
 
-                <div class="event-image image-placeholder">
-                    <span>EVENT IMAGE</span>
+                        <img src="images/gallery01.jpg"
+                            alt="Glendalough live">
+
+                    </div>
+
+
+                    <div class="gallery-item reveal">
+
+                        <img src="images/gallery02.jpg"
+                            alt="Glendalough performance">
+
+                    </div>
+
+
+                    <div class="gallery-item reveal">
+
+                        <img src="images/gallery03.jpg"
+                            alt="Glendalough musicians">
+
+                    </div>
+
+
+                    <div class="gallery-item reveal">
+
+                        <img src="images/gallery04.jpg"
+                            alt="Glendalough event">
+
+                    </div>
+
+
+                    <div class="gallery-item reveal">
+
+                        <img src="images/gallery05.jpg"
+                            alt="Glendalough traditional music">
+
+                    </div>
+
+
+                    <div class="gallery-item reveal">
+
+                        <img src="images/gallery06.jpg"
+                            alt="Glendalough live music">
+
+                    </div>
+
                 </div>
 
-                <div class="event-content">
+            </div>
 
-                    <p class="event-date">
-                        2026.07.XX
+        </section>
+
+
+
+        <!-- =========================
+             SNS
+        ========================== -->
+
+        <section class="section sns-section">
+
+            <div class="container">
+
+                <div class="sns-box reveal">
+
+                    <div>
+
+                        <p class="section-label">
+                            FOLLOW US
+                        </p>
+
+                        <h2>
+                            FOLLOW THE JOURNEY
+                        </h2>
+
+                        <p>
+                            最新の出演情報やイベント、
+                            演奏動画などはSNSで発信しています。
+                        </p>
+
+                    </div>
+
+
+                    <div class="sns-links">
+
+                        <a href="#https://www.instagram.com/glendalough_nagoya?igsh=d2FxMmM2dmVmOWR5"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            <span>
+                                INSTAGRAM
+                            </span>
+
+                            <strong>
+                                →
+                            </strong>
+
+                        </a>
+
+
+<a href="#https://www.tiktok.com/@glendalough0?_r=1&_t=ZS-96j9qdaTnDc"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            <span>
+                                TikTok
+                            </span>
+
+                            <strong>
+                                →
+                            </strong>
+
+                        </a>
+
+
+                        <a href="#https://x.com/Glendaloughers"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            <span>
+                                X / TWITTER
+                            </span>
+
+                            <strong>
+                                →
+                            </strong>
+
+                        </a>
+
+
+                        <a href="#https://youtube.com/@glendalough-celtic?si=MwXCTWw2vsqBZScn"
+                            target="_blank"
+                            rel="noopener noreferrer">
+
+                            <span>
+                                YOUTUBE
+                            </span>
+
+                            <strong>
+                                →
+                            </strong>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section id="contact"
+            class="section contact-section">
+
+            <div class="contact-background"></div>
+
+            <div class="contact-overlay"></div>
+
+
+            <div class="container">
+
+                <div class="contact-content reveal">
+
+                    <span class="section-number">
+                        06
+                    </span>
+
+                    <p class="section-label">
+                        CONTACT
                     </p>
 
-                    <h3>
-                        Celtic Music Live
-                    </h3>
 
-                    <p>
-                        Irish traditional musicを中心とした
-                        ライブパフォーマンス。
+                    <h2>
+                        BRING CELTIC<br>
+                        MUSIC TO YOUR EVENT.
+                    </h2>
+
+
+                    <p class="contact-lead">
+                        イベント・ライブ・マーケット・
+                        文化祭・店舗イベントなど、
+                        出演のご依頼やご相談を
+                        お待ちしています。
+                    </p>
+
+
+                    <a href="mailto:glendalough@gmail.com"
+                        class="button button-primary button-large">
+
+                        出演を依頼する
+
+                        <span>→</span>
+
+                    </a>
+
+
+                    <p class="contact-note">
+                        ※出演内容・編成・日時・会場など、
+                        まずはお気軽にご相談ください。
                     </p>
 
                 </div>
 
-            </article>
+            </div>
+
+        </section>
 
 
-            <article class="event-card">
+    </main>
 
-                <div class="event-image image-placeholder">
-                    <span>EVENT IMAGE</span>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-top">
+
+                <div class="footer-logo">
+
+                    <span>
+                        GLENDALOUGH
+                    </span>
+
+                    <small>
+                        CELTIC TRADITIONAL MUSIC
+                    </small>
+
                 </div>
 
-                <div class="event-content">
 
-                    <p class="event-date">
-                        2026.06.XX
-                    </p>
+                <div class="footer-nav">
 
-                    <h3>
-                        Summer Music Event
-                    </h3>
+                    <a href="#about">
+                        ABOUT
+                    </a>
 
-                    <p>
-                        街と音楽をつなぐイベントへ出演。
-                    </p>
+                    <a href="#music">
+                        MUSIC
+                    </a>
+
+                    <a href="#performance">
+                        PERFORMANCE
+                    </a>
+
+                    <a href="#works">
+                        WORKS
+                    </a>
+
+                    <a href="#gallery">
+                        GALLERY
+                    </a>
+
+                    <a href="#contact">
+                        CONTACT
+                    </a>
 
                 </div>
 
-            </article>
-
-        </div>
+            </div>
 
 
-        <div class="center-button">
-
-            <a href="#" class="button button-dark">
-                出演依頼はこちら
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ========================================
-     PERFORMANCE
-======================================== -->
-
-<section id="performance" class="section performance">
-
-    <div class="container">
-
-        <div class="section-heading center">
-
-            <p class="section-label">
-                PERFORMANCE
-            </p>
-
-            <h2>
-                Bring Glendalough<br>
-                to Your Event.
-            </h2>
-
-            <p>
-                あなたのイベントに、ケルトの音楽と
-                幻想的な時間を。
-            </p>
-
-        </div>
-
-
-        <div class="performance-grid">
-
-
-            <div class="performance-item">
-
-                <div class="performance-icon">
-                    ♪
-                </div>
-
-                <h3>
-                    MUSIC FESTIVAL
-                </h3>
+            <div class="footer-bottom">
 
                 <p>
-                    音楽フェスティバルや
-                    ステージイベント。
-                </p>
-
-            </div>
-
-
-            <div class="performance-item">
-
-                <div class="performance-icon">
-                    ?
-                </div>
-
-                <h3>
-                    MARKET
-                </h3>
-
-                <p>
-                    マーケット・マルシェ・
-                    地域イベント。
-                </p>
-
-            </div>
-
-
-            <div class="performance-item">
-
-                <div class="performance-icon">
-                    ?
-                </div>
-
-                <h3>
-                    HOTEL / RESTAURANT
-                </h3>
-
-                <p>
-                    ホテル、レストラン、
-                    パブなどでの演奏。
-                </p>
-
-            </div>
-
-
-            <div class="performance-item">
-
-                <div class="performance-icon">
-                    ?
-                </div>
-
-                <h3>
-                    PRIVATE EVENT
-                </h3>
-
-                <p>
-                    ウェディング、パーティー、
-                    プライベートイベント。
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="booking-flow">
-
-            <h3>
-                BOOKING FLOW
-            </h3>
-
-
-            <div class="flow">
-
-                <div class="flow-item">
-                    <span>01</span>
-                    <strong>お問い合わせ</strong>
-                </div>
-
-                <div class="flow-line"></div>
-
-                <div class="flow-item">
-                    <span>02</span>
-                    <strong>内容・条件の確認</strong>
-                </div>
-
-                <div class="flow-line"></div>
-
-                <div class="flow-item">
-                    <span>03</span>
-                    <strong>スケジュール調整</strong>
-                </div>
-
-                <div class="flow-line"></div>
-
-                <div class="flow-item">
-                    <span>04</span>
-                    <strong>出演決定</strong>
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div class="performance-cta">
-
-            <h3>
-                Glendaloughを<br>
-                あなたのイベントへ。
-            </h3>
-
-            <p>
-                演奏内容や条件など、お気軽にご相談ください。
-            </p>
-
-            <a href="#contact" class="button button-gold">
-                出演を依頼する
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ========================================
-     GALLERY
-======================================== -->
-
-<section id="gallery" class="section gallery">
-
-    <div class="container">
-
-        <div class="section-heading center">
-
-            <p class="section-label">
-                GALLERY
-            </p>
-
-            <h2>
-                Moments of Glendalough
-            </h2>
-
-        </div>
-
-
-        <div class="gallery-grid">
-
-            <div class="gallery-item gallery-large image-placeholder">
-                <span>PHOTO</span>
-            </div>
-
-            <div class="gallery-item image-placeholder">
-                <span>PHOTO</span>
-            </div>
-
-            <div class="gallery-item image-placeholder">
-                <span>PHOTO</span>
-            </div>
-
-            <div class="gallery-item image-placeholder">
-                <span>PHOTO</span>
-            </div>
-
-            <div class="gallery-item gallery-wide image-placeholder">
-                <span>PHOTO</span>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ========================================
-     SNS
-======================================== -->
-
-<section class="section social">
-
-    <div class="container">
-
-        <div class="section-heading center">
-
-            <p class="section-label">
-                FOLLOW GLENDALOUGH
-            </p>
-
-            <h2>
-                Follow the Journey.
-            </h2>
-
-            <p>
-                最新のライブ情報や音楽をSNSで発信しています。
-            </p>
-
-        </div>
-
-
-        <div class="social-links">
-
-            <a href="#" class="social-link">
-                Instagram
-            </a>
-
-            <a href="#" class="social-link">
-                YouTube
-            </a>
-
-            <a href="#" class="social-link">
-                TikTok
-            </a>
-
-            <a href="#" class="social-link">
-                X
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ========================================
-     CONTACT
-======================================== -->
-
-<section id="contact" class="section contact">
-
-    <div class="container">
-
-        <div class="contact-grid">
-
-
-            <div class="contact-intro">
-
-                <p class="section-label">
-                    CONTACT
-                </p>
-
-                <h2>
-                    Let's create<br>
-                    a moment together.
-                </h2>
-
-                <p>
-                    Glendaloughへの出演依頼・イベント出演に
-                    関するお問い合わせはこちらから。
+                    c 2026 Glendalough. All Rights Reserved.
                 </p>
 
                 <p>
-                    演奏内容、イベントの規模、会場など、
-                    まずはお気軽にご相談ください。
+                    Nagoya, Japan
                 </p>
 
             </div>
 
-
-            <form class="contact-form">
-
-                <div class="form-group">
-
-                    <label for="name">
-                        お名前
-                    </label>
-
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="お名前を入力してください"
-                    >
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="email">
-                        メールアドレス
-                    </label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="example@email.com"
-                    >
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="event">
-                        イベント名
-                    </label>
-
-                    <input
-                        type="text"
-                        id="event"
-                        name="event"
-                        placeholder="イベント名"
-                    >
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="date">
-                        開催日
-                    </label>
-
-                    <input
-                        type="date"
-                        id="date"
-                        name="date"
-                    >
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="message">
-                        お問い合わせ内容
-                    </label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="6"
-                        placeholder="イベントの内容やご希望などをご記入ください"
-                    ></textarea>
-
-                </div>
-
-
-                <button
-                    type="submit"
-                    class="button button-gold form-button"
-                >
-                    お問い合わせを送信
-                </button>
-
-            </form>
-
         </div>
 
-    </div>
-
-</section>
-
-</main>
+    </footer>
 
 
-<!-- ========================================
-     FOOTER
-======================================== -->
 
-<footer class="footer">
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
 
-    <div class="container">
+    <script>
 
-        <div class="footer-logo">
-            GLENDALOUGH
-        </div>
+        /* =========================
+           MOBILE MENU
+        ========================== */
 
-        <p>
-            Celtic Music from Nagoya
-        </p>
+        const menuButton =
+            document.getElementById("menuButton");
 
-        <div class="footer-nav">
+        const mobileNav =
+            document.getElementById("mobileNav");
 
-            <a href="#home">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#music">MUSIC</a>
-            <a href="#live">LIVE</a>
-            <a href="#performance">PERFORMANCE</a>
-            <a href="#gallery">GALLERY</a>
-            <a href="#contact">CONTACT</a>
 
-        </div>
+        menuButton.addEventListener("click", () => {
 
-        <p class="copyright">
-            c 2026 Glendalough. All Rights Reserved.
-        </p>
+            menuButton.classList.toggle("active");
 
-    </div>
+            mobileNav.classList.toggle("active");
 
-</footer>
+        });
+
+
+        /* Close menu */
+
+        const mobileLinks =
+            mobileNav.querySelectorAll("a");
+
+
+        mobileLinks.forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                menuButton.classList.remove("active");
+
+                mobileNav.classList.remove("active");
+
+            });
+
+        });
+
+
+
+        /* =========================
+           SCROLL REVEAL
+        ========================== */
+
+        const revealElements =
+            document.querySelectorAll(".reveal");
+
+
+        const observer =
+            new IntersectionObserver(
+                (entries) => {
+
+                    entries.forEach(entry => {
+
+                        if (entry.isIntersecting) {
+
+                            entry.target.classList.add("visible");
+
+                            observer.unobserve(entry.target);
+
+                        }
+
+                    });
+
+                },
+                {
+                    threshold: 0.15
+                }
+            );
+
+
+        revealElements.forEach(element => {
+
+            observer.observe(element);
+
+        });
+
+
+
+        /* =========================
+           HEADER SCROLL
+        ========================== */
+
+        const header =
+            document.querySelector(".header");
+
+
+        window.addEventListener("scroll", () => {
+
+            if (window.scrollY > 50) {
+
+                header.classList.add("scrolled");
+
+            } else {
+
+                header.classList.remove("scrolled");
+
+            }
+
+        });
+
+    </script>
 
 </body>
+
 </html>
