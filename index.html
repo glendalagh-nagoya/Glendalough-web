@@ -788,72 +788,346 @@
 
         </section>
 
+<!-- =========================
+     CONTACT
+========================== -->
+
+<section id="contact"
+    class="section contact-section">
+
+    <div class="contact-background"></div>
+
+    <div class="contact-overlay"></div>
 
 
-        <!-- =========================
-             CONTACT
-        ========================== -->
+    <div class="container">
 
-        <section id="contact"
-            class="section contact-section">
+        <div class="contact-content reveal">
 
-            <div class="contact-background"></div>
+            <span class="section-number">
+                06
+            </span>
 
-            <div class="contact-overlay"></div>
+            <p class="section-label">
+                CONTACT
+            </p>
 
+            <h2>
+                BRING CELTIC<br>
+                MUSIC TO YOUR EVENT.
+            </h2>
 
-            <div class="container">
+            <p class="contact-lead">
+                イベント・ライブ・マーケット・
+                文化祭・店舗イベントなど、
+                出演のご依頼やご相談を
+                お待ちしています。
+            </p>
 
-                <div class="contact-content reveal">
-
-                    <span class="section-number">
-                        06
-                    </span>
-
-                    <p class="section-label">
-                        CONTACT
-                    </p>
-
-
-                    <h2>
-                        BRING CELTIC<br>
-                        MUSIC TO YOUR EVENT.
-                    </h2>
+        </div>
 
 
-                    <p class="contact-lead">
-                        イベント・ライブ・マーケット・
-                        文化祭・店舗イベントなど、
-                        出演のご依頼やご相談を
-                        お待ちしています。
-                    </p>
+        <!-- Contact Form -->
+
+        <div class="contact-form-wrapper reveal">
+
+            <form
+                class="contact-form"
+                action="https://formspree.io/f/YOUR_FORM_ID"
+                method="POST">
 
 
-                    <a href="mailto:glendalough@gmail.com"
+                <!-- お名前 -->
+
+                <div class="form-group">
+
+                    <label for="name">
+                        お名前
+                        <span>必須</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="山田 太郎"
+                        required>
+
+                </div>
+
+
+                <!-- メールアドレス -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        メールアドレス
+                        <span>必須</span>
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@email.com"
+                        required>
+
+                </div>
+
+
+                <!-- 団体名 -->
+
+                <div class="form-group">
+
+                    <label for="organization">
+                        団体名・会社名
+                        <small>任意</small>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="organization"
+                        name="organization"
+                        placeholder="株式会社○○ / ○○実行委員会">
+
+                </div>
+
+
+                <!-- イベント名 -->
+
+                <div class="form-group">
+
+                    <label for="event">
+                        イベント名
+                        <span>必須</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="event"
+                        name="event"
+                        placeholder="○○フェスティバル"
+                        required>
+
+                </div>
+
+
+                <!-- 開催日 -->
+
+                <div class="form-group">
+
+                    <label for="date">
+                        イベント開催日
+                        <span>必須</span>
+                    </label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        name="date"
+                        required>
+
+                </div>
+
+
+                <!-- 会場 -->
+
+                <div class="form-group">
+
+                    <label for="venue">
+                        会場
+                        <span>必須</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="venue"
+                        name="venue"
+                        placeholder="○○ホール / ○○公園 / 店舗名など"
+                        required>
+
+                </div>
+
+
+                <!-- イベント種類 -->
+
+                <div class="form-group">
+
+                    <label for="event-type">
+                        イベントの種類
+                        <span>必須</span>
+                    </label>
+
+                    <select
+                        id="event-type"
+                        name="event-type"
+                        required>
+
+                        <option value="">
+                            選択してください
+                        </option>
+
+                        <option value="festival">
+                            フェス・音楽イベント
+                        </option>
+
+                        <option value="market">
+                            マーケット・マルシェ
+                        </option>
+
+                        <option value="cultural">
+                            文化・地域イベント
+                        </option>
+
+                        <option value="shop">
+                            店舗イベント
+                        </option>
+
+                        <option value="party">
+                            パーティー・記念イベント
+                        </option>
+
+                        <option value="wedding">
+                            ウェディング
+                        </option>
+
+                        <option value="other">
+                            その他
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- 希望編成 -->
+
+                <div class="form-group">
+
+                    <label for="formation">
+                        希望する演奏編成
+                        <small>任意</small>
+                    </label>
+
+                    <select
+                        id="formation"
+                        name="formation">
+
+                        <option value="">
+                            未定・相談したい
+                        </option>
+
+                        <option value="duo">
+                            2人編成
+                        </option>
+
+                        <option value="trio">
+                            3人編成
+                        </option>
+
+                        <option value="large">
+                            4人以上
+                        </option>
+
+                        <option value="consult">
+                            おまかせ・相談したい
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- 予算 -->
+
+                <div class="form-group">
+
+                    <label for="budget">
+                        ご予算
+                        <small>任意</small>
+                    </label>
+
+                    <select
+                        id="budget"
+                        name="budget">
+
+                        <option value="">
+                            未定・相談したい
+                        </option>
+
+                        <option value="under-50000">
+                            5万円未満
+                        </option>
+
+                        <option value="50000-100000">
+                            5万円?10万円
+                        </option>
+
+                        <option value="100000-200000">
+                            10万円?20万円
+                        </option>
+
+                        <option value="over-200000">
+                            20万円以上
+                        </option>
+
+                        <option value="consult">
+                            相談したい
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- 問い合わせ内容 -->
+
+                <div class="form-group">
+
+                    <label for="message">
+                        お問い合わせ内容
+                        <span>必須</span>
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="7"
+                        placeholder="イベントの概要、演奏時間、その他ご希望などをご記入ください。"
+                        required></textarea>
+
+                </div>
+
+
+                <!-- 送信 -->
+
+                <div class="form-submit">
+
+                    <button
+                        type="submit"
                         class="button button-primary button-large">
 
-                        出演を依頼する
+                        送信する
 
                         <span>→</span>
 
-                    </a>
+                    </button>
 
-
-                    <p class="contact-note">
-                        ※出演内容・編成・日時・会場など、
-                        まずはお気軽にご相談ください。
+                    <p>
+                        内容をご確認のうえ、
+                        送信してください。
                     </p>
 
                 </div>
 
-            </div>
 
-        </section>
+            </form>
 
+        </div>
 
-    </main>
+    </div>
 
-
+</section>
 
     <!-- =========================
          FOOTER
