@@ -368,7 +368,7 @@ button {
     inset: 0;
 
     background-image:
-        url("images/hero.jpg");
+        url("images/hero2.jpg");
 
     background-size: cover;
 
@@ -1332,11 +1332,11 @@ button {
     border-bottom:
         1px solid var(--border);
 
-    font-family: var(--display);
+    font-family: var(--serif);
 
-    font-size: 11px;
+    font-size: 13px;
 
-    letter-spacing: 0.15em;
+    letter-spacing: 0.08em;
 
     transition:
         color 0.3s ease,
