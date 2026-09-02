@@ -4,48 +4,60 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Glendalough | Celtic Traditional Music</title>
 
-    <meta name="description"
-        content="Glendaloughは、アイルランド・スコットランド・フランス等の伝統音楽を中心に演奏する音楽ユニット。イベント、マーケット、文化祭、店舗イベントなどへの出演依頼を承っています。">
+    <meta
+        name="description"
+        content="Glendaloughは、アイルランド・スコットランド・フランス等の伝統音楽を中心に演奏する音楽ユニット。イベント、マーケット、文化祭、店舗イベントなどへの出演依頼を承っています。"
+    >
 
-    <meta name="keywords"
-        content="Glendalough, ケルト音楽, アイリッシュ音楽, アイルランド音楽, スコットランド音楽, フランス伝統音楽, 名古屋, ライブ, 出演依頼">
+    <meta
+        name="keywords"
+        content="Glendalough, ケルト音楽, アイリッシュ音楽, アイルランド音楽, スコットランド音楽, フランス伝統音楽, 名古屋, ライブ, 出演依頼"
+    >
 
     <meta name="theme-color" content="#101510">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
+    <!-- ========================================
+         Google Fonts
+    ========================================= -->
 
-    <link rel="preconnect"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
         href="https://fonts.gstatic.com"
-        crossorigin>
+        crossorigin
+    >
 
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Noto+Serif+JP:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+JP:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
 
-    <!-- CSS -->
-    <link rel="stylesheet"
-        href="style.css">
+    <!-- ========================================
+         CSS
+    ========================================= -->
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
 
-    <!-- =========================
+    <!-- ========================================
          HEADER
-    ========================== -->
+    ========================================= -->
 
     <header class="header">
 
         <div class="header-inner">
 
-            <a href="#home"
-                class="logo">
+            <!-- Logo -->
+
+            <a href="#home" class="logo">
 
                 <span class="logo-main">
                     GLENDALOUGH
@@ -62,29 +74,46 @@
 
             <nav class="nav">
 
-                <a href="#about">ABOUT</a>
+                <a href="#about">
+                    ABOUT
+                </a>
 
-                <a href="#music">MUSIC</a>
+                <a href="#music">
+                    MUSIC
+                </a>
 
-                <a href="#performance">PERFORMANCE</a>
+                <a href="#live">
+                    LIVE
+                </a>
 
-                <a href="#works">WORKS</a>
+                <a href="#performance">
+                    PERFORMANCE
+                </a>
 
-                <a href="#gallery">GALLERY</a>
+                <a href="#works">
+                    WORKS
+                </a>
 
-                <a href="#contact"
-                    class="nav-contact">
+                <a href="#gallery">
+                    GALLERY
+                </a>
+
+                <a href="#contact" class="nav-contact">
                     CONTACT
                 </a>
 
             </nav>
 
 
-            <!-- Hamburger -->
+            <!-- Hamburger Button -->
 
-            <button class="menu-button"
+            <button
+                class="menu-button"
                 id="menuButton"
-                aria-label="メニューを開く">
+                aria-label="メニューを開く"
+                aria-expanded="false"
+                aria-controls="mobileNav"
+            >
 
                 <span></span>
                 <span></span>
@@ -97,36 +126,55 @@
 
         <!-- Mobile Navigation -->
 
-        <nav class="mobile-nav"
-            id="mobileNav">
+        <nav
+            class="mobile-nav"
+            id="mobileNav"
+        >
 
-            <a href="#about">ABOUT</a>
+            <a href="#about">
+                ABOUT
+            </a>
 
-            <a href="#music">MUSIC</a>
+            <a href="#music">
+                MUSIC
+            </a>
 
-            <a href="#performance">PERFORMANCE</a>
+            <a href="#live">
+                LIVE
+            </a>
 
-            <a href="#works">WORKS</a>
+            <a href="#performance">
+                PERFORMANCE
+            </a>
 
-            <a href="#gallery">GALLERY</a>
+            <a href="#works">
+                WORKS
+            </a>
 
-            <a href="#contact">CONTACT</a>
+            <a href="#gallery">
+                GALLERY
+            </a>
+
+            <a href="#contact">
+                CONTACT
+            </a>
 
         </nav>
 
     </header>
 
 
-
     <main>
 
 
-        <!-- =========================
+        <!-- ========================================
              HERO
-        ========================== -->
+        ========================================= -->
 
-        <section id="home"
-            class="hero">
+        <section
+            id="home"
+            class="hero"
+        >
 
             <div class="hero-background"></div>
 
@@ -139,29 +187,27 @@
                     CELTIC TRADITIONAL MUSIC
                 </p>
 
-
                 <h1>
                     GLENDALOUGH
                 </h1>
-
 
                 <p class="hero-copy">
                     Music that whispers<br>
                     from the mist of the Celtic lands.
                 </p>
 
-
-                <a href="#contact"
-                    class="button button-primary">
-
+                <a
+                    href="#contact"
+                    class="button button-primary"
+                >
                     出演を依頼する
-
                     <span>→</span>
-
                 </a>
 
             </div>
 
+
+            <!-- Scroll Indicator -->
 
             <div class="hero-scroll">
 
@@ -176,17 +222,18 @@
         </section>
 
 
+        <!-- ========================================
+             01 ABOUT
+        ========================================= -->
 
-        <!-- =========================
-             ABOUT
-        ========================== -->
-
-        <section id="about"
-            class="section about-section">
+        <section
+            id="about"
+            class="section about-section"
+        >
 
             <div class="container">
 
-                <div class="section-heading reveal">
+                <div class="section-heading">
 
                     <span class="section-number">
                         01
@@ -210,13 +257,14 @@
 
                 <div class="about-grid">
 
+                    <!-- Text -->
+
                     <div class="about-text reveal">
 
                         <p class="lead">
-                            音楽を通して、
+                            音楽を通して、<br>
                             ケルトの風景を。
                         </p>
-
 
                         <p>
                             Glendaloughは、アイルランド・
@@ -225,14 +273,12 @@
                             音楽ユニットです。
                         </p>
 
-
                         <p>
                             ケルト音楽に息づく美しい旋律、
                             軽やかなダンスチューン、
                             そしてどこか懐かしさを感じる
                             素朴な響き。
                         </p>
-
 
                         <p>
                             会場に訪れた人々が、
@@ -244,10 +290,15 @@
                     </div>
 
 
+                    <!-- Image -->
+
                     <div class="about-image reveal">
 
-                        <img src="images/hero.jpg"
-                            alt="Glendalough traditional music performance">
+                        <img
+                            src="images/hero.jpg"
+                            alt="Glendalough traditional music performance"
+                            loading="lazy"
+                        >
 
                         <div class="image-caption">
                             MUSIC ・ MIST ・ MEMORY
@@ -262,23 +313,27 @@
         </section>
 
 
+        <!-- ========================================
+             02 MUSIC
+        ========================================= -->
 
-        <!-- =========================
-             MUSIC
-        ========================== -->
+        <section
+            id="music"
+            class="music-section"
+        >
 
-        <section id="music"
-            class="section music-section">
+            <div class="music-container">
 
-            <div class="container">
 
-                <div class="section-heading centered reveal">
+                <!-- Section Heading -->
 
-                    <span class="section-number">
+                <div class="music-section-heading reveal">
+
+                    <p class="music-section-number">
                         02
-                    </span>
+                    </p>
 
-                    <p class="section-label">
+                    <p class="music-section-label">
                         MUSIC
                     </p>
 
@@ -287,113 +342,395 @@
                         SOUNDS
                     </h2>
 
-                    <p class="section-intro">
-                        アイルランド・スコットランド・
-                        フランス等の伝統音楽を中心に、
-                        ケルト音楽の持つ多彩な表情を
-                        お届けします。
+                    <p class="music-intro">
+                        アイルランドの伝統音楽を軸に、<br>
+                        ケルトの世界から、さまざまな民族音楽へ。
                     </p>
 
                 </div>
 
 
-                <div class="music-cards">
+                <!-- ====================================
+                     TRADITIONAL SOUNDS
+                ===================================== -->
 
+                <div class="music-category">
 
-                    <article class="music-card reveal">
+                    <div class="music-category-heading">
 
-                        <div class="music-icon">
-                            ♪
+                        <div>
+
+                            <p class="music-category-label">
+                                TRADITIONAL SOUNDS
+                            </p>
+
+                            <h3>
+                                Ireland
+                            </h3>
+
                         </div>
 
-                        <h3>
-                            AIRS
-                        </h3>
-
-                        <p>
-                            静かで美しい旋律。
-                            会場を包み込むような
-                            穏やかな音楽。
+                        <p class="music-category-description">
+                            アイルランドに受け継がれてきた<br>
+                            伝統音楽のさまざまな表情。
                         </p>
-
-                    </article>
-
-
-                    <article class="music-card reveal">
-
-                        <div class="music-icon">
-                            ?
-                        </div>
-
-                        <h3>
-                            DANCE TUNES
-                        </h3>
-
-                        <p>
-                            Reels、Jigs、Polkasなど、
-                            躍動感あふれるダンスチューン。
-                        </p>
-
-                    </article>
-
-
-                    <article class="music-card reveal">
-
-                        <div class="music-icon">
-                            ?
-                        </div>
-
-                        <h3>
-                            TRADITIONAL
-                        </h3>
-
-                        <p>
-                            古くから受け継がれてきた
-                            ヨーロッパ各地の伝統音楽。
-                        </p>
-
-                    </article>
-
-                </div>
-
-
-                <!-- Video -->
-
-                <div class="video-area reveal">
-
-                    <div class="video-heading">
-
-                        <p class="section-label">
-                            VIDEO
-                        </p>
-
-                        <h3>
-                            MUSIC IN MOTION
-                        </h3>
 
                     </div>
 
 
-                    <div class="video-grid">
+                    <div class="music-card-grid">
 
+
+                        <!-- AIRS -->
+
+                        <article class="music-card reveal">
+
+                            <div class="music-card-image">
+
+                                <img
+                                    src="images/music-airs.jpg"
+                                    alt="アイルランドの伝統音楽 AIRS"
+                                    loading="lazy"
+                                >
+
+                                <div class="music-card-overlay"></div>
+
+                                <span class="music-card-number">
+                                    01
+                                </span>
+
+                            </div>
+
+
+                            <div class="music-card-content">
+
+                                <p class="music-card-type">
+                                    AIRS
+                                </p>
+
+                                <h4>
+                                    静かで美しい旋律。
+                                </h4>
+
+                                <p>
+                                    アイルランドの伝統音楽に息づく、
+                                    ゆっくりと旋律を味わう音楽。
+                                    フィドルやアイリッシュフルートから
+                                    紡がれる繊細なメロディが、
+                                    その場を静かに彩ります。
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- JIGS -->
+
+                        <article class="music-card reveal">
+
+                            <div class="music-card-image">
+
+                                <img
+                                    src="images/music-jigs.jpg"
+                                    alt="アイルランドの伝統音楽 JIGS"
+                                    loading="lazy"
+                                >
+
+                                <div class="music-card-overlay"></div>
+
+                                <span class="music-card-number">
+                                    02
+                                </span>
+
+                            </div>
+
+
+                            <div class="music-card-content">
+
+                                <p class="music-card-type">
+                                    JIGS
+                                </p>
+
+                                <h4>
+                                    軽快でリズミカルな<br>
+                                    ダンス音楽。
+                                </h4>
+
+                                <p>
+                                    6/8拍子を中心とした軽やかなリズム。
+                                    フィドルやフルート、アコーディオンなどが
+                                    生み出す明るいメロディは、
+                                    自然と足が動き出すような楽しさを届けます。
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- REELS -->
+
+                        <article class="music-card reveal">
+
+                            <div class="music-card-image">
+
+                                <img
+                                    src="images/music-reels.jpg"
+                                    alt="アイルランドの伝統音楽 REELS"
+                                    loading="lazy"
+                                >
+
+                                <div class="music-card-overlay"></div>
+
+                                <span class="music-card-number">
+                                    03
+                                </span>
+
+                            </div>
+
+
+                            <div class="music-card-content">
+
+                                <p class="music-card-type">
+                                    REELS
+                                </p>
+
+                                <h4>
+                                    疾走感あふれる、<br>
+                                    躍動のリズム。
+                                </h4>
+
+                                <p>
+                                    4/4拍子を中心とした、
+                                    アイルランドを代表するダンス音楽。
+                                    繰り返されるリズムと力強い旋律が、
+                                    ライブを一気に盛り上げます。
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ====================================
+                     BEYOND CELTIC
+                ===================================== -->
+
+                <div class="music-category music-category-beyond">
+
+                    <div class="music-category-heading">
+
+                        <div>
+
+                            <p class="music-category-label">
+                                BEYOND CELTIC
+                            </p>
+
+                            <h3>
+                                Beyond Ireland
+                            </h3>
+
+                        </div>
+
+                        <p class="music-category-description">
+                            アイルランドから、<br>
+                            さらに広がるケルトの音楽へ。
+                        </p>
+
+                    </div>
+
+
+                    <div class="music-card-grid">
+
+
+                        <!-- BRETON -->
+
+                        <article class="music-card world-card reveal">
+
+                            <div class="music-card-image">
+
+                                <img
+                                    src="images/music-breton.jpg"
+                                    alt="ブルターニュの伝統音楽"
+                                    loading="lazy"
+                                >
+
+                                <div class="music-card-overlay"></div>
+
+                                <span class="music-card-number">
+                                    04
+                                </span>
+
+                            </div>
+
+
+                            <div class="music-card-content">
+
+                                <p class="music-card-type">
+                                    BRETON
+                                </p>
+
+                                <h4>
+                                    ブルターニュの音楽。
+                                </h4>
+
+                                <p>
+                                    フランス北西部、ブルターニュに
+                                    息づくケルトの伝統。
+                                    素朴で力強い旋律と独特のリズムが、
+                                    大地や海を思わせます。
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- SCOTTISH -->
+
+                        <article class="music-card world-card reveal">
+
+                            <div class="music-card-image">
+
+                                <img
+                                    src="images/music-scottish.jpg"
+                                    alt="スコットランドの伝統音楽"
+                                    loading="lazy"
+                                >
+
+                                <div class="music-card-overlay"></div>
+
+                                <span class="music-card-number">
+                                    05
+                                </span>
+
+                            </div>
+
+
+                            <div class="music-card-content">
+
+                                <p class="music-card-type">
+                                    SCOTTISH
+                                </p>
+
+                                <h4>
+                                    スコットランドの音楽。
+                                </h4>
+
+                                <p>
+                                    スコットランドの広大な風景を
+                                    思わせる力強く美しい旋律。
+                                    ケルト文化に根づいた音楽を、
+                                    Glendaloughの音で表現します。
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- WORLD FOLK MUSIC -->
+
+                        <article class="music-card world-card reveal">
+
+                            <div class="music-card-image">
+
+                                <img
+                                    src="images/music-world.jpg"
+                                    alt="世界の民族音楽"
+                                    loading="lazy"
+                                >
+
+                                <div class="music-card-overlay"></div>
+
+                                <span class="music-card-number">
+                                    06
+                                </span>
+
+                            </div>
+
+
+                            <div class="music-card-content">
+
+                                <p class="music-card-type">
+                                    WORLD FOLK MUSIC
+                                </p>
+
+                                <h4>
+                                    世界各地に息づく<br>
+                                    民族音楽。
+                                </h4>
+
+                                <p>
+                                    国や地域を越えて受け継がれてきた
+                                    音楽には、それぞれの土地の風景と
+                                    人々の暮らしがあります。
+                                    さまざまな音楽との出会いを、
+                                    Glendaloughの音で。
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ====================================
+                     MUSIC IN MOTION
+                ===================================== -->
+
+                <div
+                    id="music-video"
+                    class="music-video-area reveal"
+                >
+
+                    <div class="music-video-heading">
+
+                        <p class="music-category-label">
+                            MUSIC IN MOTION
+                        </p>
+
+                        <h3>
+                            HEAR THE MUSIC.
+                        </h3>
+
+                        <p>
+                            実際の演奏を通して、<br>
+                            Glendaloughの音を感じてください。
+                        </p>
+
+                    </div>
+
+
+                    <div class="music-video-content">
 
                         <!-- YouTube Short -->
 
                         <div class="youtube-short">
 
                             <iframe
-                                src="https://www.youtube.com/embed/-btG-2M4QXQ?si=GJL0K1WZPnysIp-C"
+                                src="https://www.youtube.com/embed/-btG-2M4QXQ"
                                 title="Glendalough YouTube Short"
-                                frameborder="0"
+                                loading="lazy"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin"
-                                allowfullscreen>
-                            </iframe>
+                                allowfullscreen
+                            ></iframe>
 
                         </div>
 
 
-                        <div class="video-description">
+                        <!-- Description -->
+
+                        <div class="music-video-description">
 
                             <p>
                                 音楽と映像を通して、
@@ -401,15 +738,19 @@
                                 お楽しみください。
                             </p>
 
-
-                            <a href="https://www.youtube.com/@glendalough-celtic"
+                            <a
+                                href="https://www.youtube.com/@glendalough-celtic"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                class="text-link">
+                                class="music-youtube-link"
+                            >
+                                <span>
+                                    LISTEN MORE
+                                </span>
 
-                                YouTubeで動画を見る
-                                <span>→</span>
-
+                                <strong>
+                                    →
+                                </strong>
                             </a>
 
                         </div>
@@ -418,22 +759,298 @@
 
                 </div>
 
+
+                <!-- Closing -->
+
+                <div class="music-closing reveal">
+
+                    <span class="music-closing-line"></span>
+
+                    <p>
+                        From Ireland,<br>
+                        to the world.
+                    </p>
+
+                    <span class="music-closing-line"></span>
+
+                </div>
+
             </div>
 
         </section>
 
 
+        <!-- ========================================
+             03 LIVE
+        ========================================= -->
 
-        <!-- =========================
-             PERFORMANCE
-        ========================== -->
+        <section
+            id="live"
+            class="live-section"
+        >
 
-        <section id="performance"
-            class="section performance-section">
+            <div class="container">
 
+                <!-- Section Header -->
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">
+                        03
+                    </span>
+
+                    <div>
+
+                        <p class="section-label">
+                            LIVE
+                        </p>
+
+                        <h2>
+                            WHERE THE<br>
+                            MUSIC TAKES US
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Introduction -->
+
+                <div class="live-intro reveal">
+
+                    <p class="live-intro-lead">
+                        音楽と出会える場所へ。
+                    </p>
+
+                    <p>
+                        Glendaloughの出演情報をご案内します。<br>
+                        イベント、フェスティバル、マーケット、パブ、カフェなど、
+                        様々な場所で音楽を届けています。
+                    </p>
+
+                </div>
+
+
+                <!-- ====================================
+                     UPCOMING EVENTS
+                ===================================== -->
+
+                <div class="live-block">
+
+                    <div class="live-block-heading reveal">
+
+                        <p class="section-label">
+                            UPCOMING EVENTS
+                        </p>
+
+                        <h3>
+                            NEXT LIVE
+                        </h3>
+
+                    </div>
+
+
+                    <!-- Event -->
+
+                    <article class="live-event reveal">
+
+                        <!-- Event Image -->
+
+                        <div class="live-event-image">
+
+                            <img
+                                src="images/live-20260910.jpg"
+                                alt="2026年9月10日 Parfilion Glendalough Black Mountain Ramblers ライブ"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+
+                        <!-- Event Information -->
+
+                        <div class="live-event-info">
+
+                            <p class="live-event-date">
+                                2026.09.10 THU
+                            </p>
+
+                            <h4>
+                                Parfilion × Glendalough ×
+                                Black Mountain Ramblers
+                            </h4>
+
+
+                            <div class="live-event-meta">
+
+                                <p>
+                                    <span>
+                                        VENUE
+                                    </span>
+                                    K.Dハポン
+                                </p>
+
+                                <p>
+                                    <span>
+                                        OPEN
+                                    </span>
+                                    18:00
+                                </p>
+
+                                <p>
+                                    <span>
+                                        START
+                                    </span>
+                                    19:00
+                                </p>
+
+                                <p>
+                                    <span>
+                                        TICKET
+                                    </span>
+                                    \2,400 + 1Drink
+                                </p>
+
+                            </div>
+
+
+                            <p class="live-event-address">
+                                名古屋市中区千代田5-12-7
+                            </p>
+
+
+                            <!--
+                            イベント詳細ページや
+                            会場・予約ページがある場合はこちらを使用
+
+                            <a
+                                href="EVENT_URL"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="live-event-link"
+                            >
+                                EVENT DETAILS
+                                <span>→</span>
+                            </a>
+                            -->
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ====================================
+                     MORE TO COME
+                ===================================== -->
+
+                <div class="live-block live-future">
+
+                    <div class="live-block-heading reveal">
+
+                        <p class="section-label">
+                            MORE TO COME
+                        </p>
+
+                        <h3>
+                            UPCOMING EVENTS
+                        </h3>
+
+                    </div>
+
+                    <p class="live-future-text reveal">
+                        今後の出演情報は順次更新していきます。
+                    </p>
+
+                </div>
+
+
+                <!-- ====================================
+                     PAST EVENTS
+                ===================================== -->
+
+                <div class="live-block live-past">
+
+                    <div class="live-block-heading reveal">
+
+                        <p class="section-label">
+                            PAST EVENTS
+                        </p>
+
+                        <h3>
+                            WHERE WE'VE BEEN
+                        </h3>
+
+                    </div>
+
+
+                    <div class="past-events-grid">
+
+                        <article class="past-event reveal">
+
+                            <p>
+                                2026
+                            </p>
+
+                            <h4>
+                                St. Patrick's Day
+                            </h4>
+
+                            <span>
+                                Nagoya
+                            </span>
+
+                        </article>
+
+
+                        <article class="past-event reveal">
+
+                            <p>
+                                2025
+                            </p>
+
+                            <h4>
+                                St. Patrick's Day
+                            </h4>
+
+                            <span>
+                                Nagoya
+                            </span>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Closing -->
+
+                <div class="live-closing reveal">
+
+                    <p>
+                        Come and hear the music.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             04 PERFORMANCE
+        ========================================= -->
+
+        <section
+            id="performance"
+            class="section performance-section"
+        >
 
             <div class="performance-background"></div>
-
 
             <div class="performance-overlay"></div>
 
@@ -443,7 +1060,7 @@
                 <div class="performance-content reveal">
 
                     <span class="section-number">
-                        03
+                        04
                     </span>
 
                     <p class="section-label">
@@ -455,12 +1072,10 @@
                         YOUR EVENT
                     </h2>
 
-
                     <p class="performance-lead">
                         あなたのイベントに、<br>
                         ケルトの風を。
                     </p>
-
 
                     <p>
                         イベント、マーケット、文化祭、
@@ -469,14 +1084,14 @@
                         ご相談いただけます。
                     </p>
 
+                      
 
-                    <a href="#contact"
-                        class="button button-light">
-
+                    <a
+                        href="#contact"
+                        class="button button-light"
+                    >
                         出演について相談する
-
                         <span>→</span>
-
                     </a>
 
                 </div>
@@ -486,20 +1101,21 @@
         </section>
 
 
+        <!-- ========================================
+             05 WORKS
+        ========================================= -->
 
-        <!-- =========================
-             WORKS
-        ========================== -->
-
-        <section id="works"
-            class="section works-section">
+        <section
+            id="works"
+            class="section works-section"
+        >
 
             <div class="container">
 
                 <div class="section-heading reveal">
 
                     <span class="section-number">
-                        04
+                        05
                     </span>
 
                     <div>
@@ -521,10 +1137,15 @@
                 <div class="works-grid">
 
 
+                    <!-- Live Performance -->
+
                     <article class="work-item reveal">
 
-                        <img src="images/performance3.png"
-                            alt="Glendalough live performance">
+                        <img
+                            src="images/performance3.png"
+                            alt="Glendalough live performance"
+                            loading="lazy"
+                        >
 
                         <div class="work-info">
 
@@ -546,10 +1167,15 @@
                     </article>
 
 
+                    <!-- Outdoor Event -->
+
                     <article class="work-item reveal">
 
-                        <img src="images/performance2.png"
-                            alt="Glendalough outdoor performance">
+                        <img
+                            src="images/performance2.png"
+                            alt="Glendalough outdoor performance"
+                            loading="lazy"
+                        >
 
                         <div class="work-info">
 
@@ -571,10 +1197,15 @@
                     </article>
 
 
+                    <!-- Cultural Event -->
+
                     <article class="work-item reveal">
 
-                        <img src="images/performance1.png"
-                            alt="Glendalough music event">
+                        <img
+                            src="images/performance1.png"
+                            alt="Glendalough music event"
+                            loading="lazy"
+                        >
 
                         <div class="work-info">
 
@@ -602,20 +1233,21 @@
         </section>
 
 
+        <!-- ========================================
+             06 GALLERY
+        ========================================= -->
 
-        <!-- =========================
-             GALLERY
-        ========================== -->
-
-        <section id="gallery"
-            class="section gallery-section">
+        <section
+            id="gallery"
+            class="section gallery-section"
+        >
 
             <div class="container">
 
                 <div class="section-heading centered reveal">
 
                     <span class="section-number">
-                        05
+                        06
                     </span>
 
                     <p class="section-label">
@@ -635,51 +1267,68 @@
 
                 <div class="gallery-grid">
 
-
                     <div class="gallery-item gallery-large reveal">
 
-                        <img src="images/gallery01.jpg"
-                            alt="Glendalough live">
+                        <img
+                            src="images/gallery01.jpg"
+                            alt="Glendalough live"
+                            loading="lazy"
+                        >
 
                     </div>
 
 
                     <div class="gallery-item reveal">
 
-                        <img src="images/gallery02.jpg"
-                            alt="Glendalough performance">
+                        <img
+                            src="images/gallery02.jpg"
+                            alt="Glendalough performance"
+                            loading="lazy"
+                        >
 
                     </div>
 
 
                     <div class="gallery-item reveal">
 
-                        <img src="images/gallery03.jpg"
-                            alt="Glendalough musicians">
+                        <img
+                            src="images/gallery03.jpg"
+                            alt="Glendalough musicians"
+                            loading="lazy"
+                        >
 
                     </div>
 
 
                     <div class="gallery-item reveal">
 
-                        <img src="images/gallery04.jpg"
-                            alt="Glendalough event">
+                        <img
+                            src="images/gallery04.jpg"
+                            alt="Glendalough event"
+                            loading="lazy"
+                        >
 
                     </div>
 
 
                     <div class="gallery-item reveal">
 
-                        <img src="images/gallery05.jpg"
-                            alt="Glendalough traditional music">
+                        <img
+                            src="images/gallery05.jpg"
+                            alt="Glendalough traditional music"
+                            loading="lazy"
+                        >
 
                     </div>
 
 
                     <div class="gallery-item reveal">
 
-                        <img src="images/gallery06.jpg"
-                            alt="Glendalough live music">
+                        <img
+                            src="images/gallery06.jpg"
+                            alt="Glendalough live music"
+                            loading="lazy"
+                        >
 
                     </div>
 
@@ -690,10 +1339,9 @@
         </section>
 
 
-
-        <!-- =========================
+        <!-- ========================================
              SNS
-        ========================== -->
+        ========================================= -->
 
         <section class="section sns-section">
 
@@ -721,10 +1369,11 @@
 
                     <div class="sns-links">
 
-                        <a href="https://www.instagram.com/glendalough_nagoya?igsh=d2FxMmM2dmVmOWR5"
+                        <a
+                            href="https://www.instagram.com/glendalough_nagoya?igsh=d2FxMmM2dmVmOWR5"
                             target="_blank"
-                            rel="noopener noreferrer">
-
+                            rel="noopener noreferrer"
+                        >
                             <span>
                                 Instagram
                             </span>
@@ -732,14 +1381,14 @@
                             <strong>
                                 →
                             </strong>
-
                         </a>
 
 
-<a href="https://www.tiktok.com/@glendalough0?_r=1&_t=ZS-96j9qdaTnDc"
+                        <a
+                            href="https://www.tiktok.com/@glendalough0?_r=1&_t=ZS-96j9qdaTnDc"
                             target="_blank"
-                            rel="noopener noreferrer">
-
+                            rel="noopener noreferrer"
+                        >
                             <span>
                                 TikTok
                             </span>
@@ -747,14 +1396,14 @@
                             <strong>
                                 →
                             </strong>
-
                         </a>
 
 
-                        <a href="https://x.com/Glendaloughers"
+                        <a
+                            href="https://x.com/Glendaloughers"
                             target="_blank"
-                            rel="noopener noreferrer">
-
+                            rel="noopener noreferrer"
+                        >
                             <span>
                                 X / Twitter
                             </span>
@@ -762,14 +1411,14 @@
                             <strong>
                                 →
                             </strong>
-
                         </a>
 
 
-                        <a href="https://youtube.com/@glendalough-celtic?si=MwXCTWw2vsqBZScn"
+                        <a
+                            href="https://youtube.com/@glendalough-celtic?si=MwXCTWw2vsqBZScn"
                             target="_blank"
-                            rel="noopener noreferrer">
-
+                            rel="noopener noreferrer"
+                        >
                             <span>
                                 YouTube
                             </span>
@@ -777,7 +1426,6 @@
                             <strong>
                                 →
                             </strong>
-
                         </a>
 
                     </div>
@@ -788,356 +1436,376 @@
 
         </section>
 
-<!-- =========================
-     CONTACT
-========================== -->
 
-<section id="contact"
-    class="section contact-section">
+        <!-- ========================================
+             07 CONTACT
+        ========================================= -->
 
-    <div class="contact-background"></div>
+        <section
+            id="contact"
+            class="section contact-section"
+        >
 
-    <div class="contact-overlay"></div>
+            <div class="contact-background"></div>
 
+            <div class="contact-overlay"></div>
 
-    <div class="container">
 
-        <div class="contact-content reveal">
+            <div class="container">
 
-            <span class="section-number">
-                06
-            </span>
+                <!-- Contact Introduction -->
 
-            <p class="section-label">
-                CONTACT
-            </p>
+                <div class="contact-content reveal">
 
-            <h2>
-                BRING CELTIC<br>
-                MUSIC TO YOUR EVENT.
-            </h2>
+                    <span class="section-number">
+                        07
+                    </span>
 
-            <p class="contact-lead">
-                イベント・ライブ・マーケット・
-                文化祭・店舗イベントなど、
-                出演のご依頼やご相談を
-                お待ちしています。
-            </p>
+                    <p class="section-label">
+                        CONTACT
+                    </p>
 
-        </div>
+                    <h2>
+                        BRING CELTIC<br>
+                        MUSIC TO YOUR EVENT.
+                    </h2>
 
-
-        <!-- Contact Form -->
-
-        <div class="contact-form-wrapper reveal">
-
-            <form
-                class="contact-form"
-                action="https://formspree.io/f/xkjwpwlo"
-                method="POST">
-
-
-                <!-- お名前 -->
-
-                <div class="form-group">
-
-                    <label for="name">
-                        お名前
-                        <span>必須</span>
-                    </label>
-
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="山田 太郎"
-                        required>
-
-                </div>
-
-
-                <!-- メールアドレス -->
-
-                <div class="form-group">
-
-                    <label for="email">
-                        メールアドレス
-                        <span>必須</span>
-                    </label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="example@email.com"
-                        required>
-
-                </div>
-
-
-                <!-- 団体名 -->
-
-                <div class="form-group">
-
-                    <label for="organization">
-                        団体名・会社名
-                        <small>任意</small>
-                    </label>
-
-                    <input
-                        type="text"
-                        id="organization"
-                        name="organization"
-                        placeholder="株式会社○○ / ○○実行委員会">
-
-                </div>
-
-
-                <!-- イベント名 -->
-
-                <div class="form-group">
-
-                    <label for="event">
-                        イベント名
-                        <span>必須</span>
-                    </label>
-
-                    <input
-                        type="text"
-                        id="event"
-                        name="event"
-                        placeholder="○○フェスティバル"
-                        required>
-
-                </div>
-
-
-                <!-- 開催日 -->
-
-                <div class="form-group">
-
-                    <label for="date">
-                        イベント開催日
-                        <span>必須</span>
-                    </label>
-
-                    <input
-                        type="date"
-                        id="date"
-                        name="date"
-                        required>
-
-                </div>
-
-
-                <!-- 会場 -->
-
-                <div class="form-group">
-
-                    <label for="venue">
-                        会場
-                        <span>必須</span>
-                    </label>
-
-                    <input
-                        type="text"
-                        id="venue"
-                        name="venue"
-                        placeholder="○○ホール / ○○公園 / 店舗名など"
-                        required>
-
-                </div>
-
-
-                <!-- イベント種類 -->
-
-                <div class="form-group">
-
-                    <label for="event-type">
-                        イベントの種類
-                        <span>必須</span>
-                    </label>
-
-                    <select
-                        id="event-type"
-                        name="event-type"
-                        required>
-
-                        <option value="">
-                            選択してください
-                        </option>
-
-                        <option value="festival">
-                            フェス・音楽イベント
-                        </option>
-
-                        <option value="market">
-                            マーケット・マルシェ
-                        </option>
-
-                        <option value="cultural">
-                            文化・地域イベント
-                        </option>
-
-                        <option value="shop">
-                            店舗イベント
-                        </option>
-
-                        <option value="party">
-                            パーティー・記念イベント
-                        </option>
-
-                        <option value="wedding">
-                            ウェディング
-                        </option>
-
-                        <option value="other">
-                            その他
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <!-- 希望編成 -->
-
-                <div class="form-group">
-
-                    <label for="formation">
-                        希望する演奏編成
-                        <small>任意</small>
-                    </label>
-
-                    <select
-                        id="formation"
-                        name="formation">
-
-                        <option value="">
-                            未定・相談したい
-                        </option>
-
-                        <option value="duo">
-                            2人編成
-                        </option>
-
-                        <option value="trio">
-                            3人編成
-                        </option>
-
-                        <option value="large">
-                            4人以上
-                        </option>
-
-                        <option value="consult">
-                            おまかせ・相談したい
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <!-- 予算 -->
-
-                <div class="form-group">
-
-                    <label for="budget">
-                        ご予算
-                        <small>任意</small>
-                    </label>
-
-                    <select
-                        id="budget"
-                        name="budget">
-
-                        <option value="">
-                            未定・相談したい
-                        </option>
-
-                        <option value="under-50000">
-                            5万円未満
-                        </option>
-
-                        <option value="50000-100000">
-                            5万円～10万円
-                        </option>
-
-                        <option value="100000-200000">
-                            10万円～20万円
-                        </option>
-
-                        <option value="over-200000">
-                            20万円以上
-                        </option>
-
-                        <option value="consult">
-                            相談したい
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <!-- 問い合わせ内容 -->
-
-                <div class="form-group">
-
-                    <label for="message">
-                        お問い合わせ内容
-                        <span>必須</span>
-                    </label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="7"
-                        placeholder="イベントの概要、演奏時間、その他ご希望などをご記入ください。"
-                        required></textarea>
-
-                </div>
-
-
-                <!-- 送信 -->
-
-                <div class="form-submit">
-
-                    <button
-                        type="submit"
-                        class="button button-primary button-large">
-
-                        送信する
-
-                        <span>→</span>
-
-                    </button>
-
-                    <p>
-                        内容をご確認のうえ、
-                        送信してください。
+                    <p class="contact-lead">
+                        イベント・ライブ・マーケット・
+                        文化祭・店舗イベントなど、
+                        出演のご依頼やご相談を
+                        お待ちしています。
                     </p>
 
                 </div>
 
 
-            </form>
+                <!-- ====================================
+                     CONTACT FORM
+                ===================================== -->
 
-        </div>
+                <div class="contact-form-wrapper reveal">
 
-    </div>
+                    <form
+                        class="contact-form"
+                        action="https://formspree.io/f/xkjwpwlo"
+                        method="POST"
+                    >
 
-</section>
 
-    <!-- =========================
+                        <!-- お名前 -->
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                お名前
+                                <span>必須</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="山田 太郎"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- メールアドレス -->
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                メールアドレス
+                                <span>必須</span>
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="example@email.com"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- 団体名 -->
+
+                        <div class="form-group">
+
+                            <label for="organization">
+                                団体名・会社名
+                                <small>任意</small>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="organization"
+                                name="organization"
+                                placeholder="株式会社○○ / ○○実行委員会"
+                            >
+
+                        </div>
+
+
+                        <!-- イベント名 -->
+
+                        <div class="form-group">
+
+                            <label for="event">
+                                イベント名
+                                <span>必須</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="event"
+                                name="event"
+                                placeholder="○○フェスティバル"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- 開催日 -->
+
+                        <div class="form-group">
+
+                            <label for="date">
+                                イベント開催日
+                                <span>必須</span>
+                            </label>
+
+                            <input
+                                type="date"
+                                id="date"
+                                name="date"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- 会場 -->
+
+                        <div class="form-group">
+
+                            <label for="venue">
+                                会場
+                                <span>必須</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="venue"
+                                name="venue"
+                                placeholder="○○ホール / ○○公園 / 店舗名など"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- イベント種類 -->
+
+                        <div class="form-group">
+
+                            <label for="event-type">
+                                イベントの種類
+                                <span>必須</span>
+                            </label>
+
+                            <select
+                                id="event-type"
+                                name="event-type"
+                                required
+                            >
+
+                                <option value="">
+                                    選択してください
+                                </option>
+
+                                <option value="festival">
+                                    フェス・音楽イベント
+                                </option>
+
+                                <option value="market">
+                                    マーケット・マルシェ
+                                </option>
+
+                                <option value="cultural">
+                                    文化・地域イベント
+                                </option>
+
+                                <option value="shop">
+                                    店舗イベント
+                                </option>
+
+                                <option value="party">
+                                    パーティー・記念イベント
+                                </option>
+
+                                <option value="wedding">
+                                    ウェディング
+                                </option>
+
+                                <option value="other">
+                                    その他
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- 希望編成 -->
+
+                        <div class="form-group">
+
+                            <label for="formation">
+                                希望する演奏編成
+                                <small>任意</small>
+                            </label>
+
+                            <select
+                                id="formation"
+                                name="formation"
+                            >
+
+                                <option value="">
+                                    未定・相談したい
+                                </option>
+
+                                <option value="duo">
+                                    2人編成
+                                </option>
+
+                                <option value="trio">
+                                    3人編成
+                                </option>
+
+                                <option value="large">
+                                    4人以上
+                                </option>
+
+                                <option value="consult">
+                                    おまかせ・相談したい
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- 予算 -->
+
+                        <div class="form-group">
+
+                            <label for="budget">
+                                ご予算
+                                <small>任意</small>
+                            </label>
+
+                            <select
+                                id="budget"
+                                name="budget"
+                            >
+
+                                <option value="">
+                                    未定・相談したい
+                                </option>
+
+                                <option value="under-50000">
+                                    5万円未満
+                                </option>
+
+                                <option value="50000-100000">
+                                    5万円～10万円
+                                </option>
+
+                                <option value="100000-200000">
+                                    10万円～20万円
+                                </option>
+
+                                <option value="over-200000">
+                                    20万円以上
+                                </option>
+
+                                <option value="consult">
+                                    相談したい
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- 問い合わせ内容 -->
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                お問い合わせ内容
+                                <span>必須</span>
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="7"
+                                placeholder="イベントの概要、演奏時間、その他ご希望などをご記入ください。"
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- 送信 -->
+
+                        <div class="form-submit">
+
+                            <button
+                                type="submit"
+                                class="button button-primary button-large"
+                            >
+                                送信する
+                                <span>→</span>
+                            </button>
+
+                            <p>
+                                内容をご確認のうえ、
+                                送信してください。
+                            </p>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ========================================
          FOOTER
-    ========================== -->
+    ========================================= -->
 
     <footer class="footer">
 
         <div class="container">
 
             <div class="footer-top">
+
+                <!-- Footer Logo -->
 
                 <div class="footer-logo">
 
@@ -1152,6 +1820,8 @@
                 </div>
 
 
+                <!-- Footer Navigation -->
+
                 <div class="footer-nav">
 
                     <a href="#about">
@@ -1160,6 +1830,10 @@
 
                     <a href="#music">
                         MUSIC
+                    </a>
+
+                    <a href="#live">
+                        LIVE
                     </a>
 
                     <a href="#performance">
@@ -1200,16 +1874,15 @@
     </footer>
 
 
-
-    <!-- =========================
+    <!-- ========================================
          JAVASCRIPT
-    ========================== -->
+    ========================================= -->
 
     <script>
 
-        /* =========================
+        /* ========================================
            MOBILE MENU
-        ========================== */
+        ========================================= */
 
         const menuButton =
             document.getElementById("menuButton");
@@ -1220,14 +1893,27 @@
 
         menuButton.addEventListener("click", () => {
 
-            menuButton.classList.toggle("active");
+            const isOpen =
+                menuButton.classList.toggle("active");
 
             mobileNav.classList.toggle("active");
+
+            menuButton.setAttribute(
+                "aria-expanded",
+                isOpen
+            );
+
+            menuButton.setAttribute(
+                "aria-label",
+                isOpen
+                    ? "メニューを閉じる"
+                    : "メニューを開く"
+            );
 
         });
 
 
-        /* Close menu */
+        /* Close mobile menu */
 
         const mobileLinks =
             mobileNav.querySelectorAll("a");
@@ -1241,15 +1927,24 @@
 
                 mobileNav.classList.remove("active");
 
+                menuButton.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+                menuButton.setAttribute(
+                    "aria-label",
+                    "メニューを開く"
+                );
+
             });
 
         });
 
 
-
-        /* =========================
+        /* ========================================
            SCROLL REVEAL
-        ========================== */
+        ========================================= */
 
         const revealElements =
             document.querySelectorAll(".reveal");
@@ -1263,9 +1958,13 @@
 
                         if (entry.isIntersecting) {
 
-                            entry.target.classList.add("visible");
+                            entry.target.classList.add(
+                                "visible"
+                            );
 
-                            observer.unobserve(entry.target);
+                            observer.unobserve(
+                                entry.target
+                            );
 
                         }
 
@@ -1285,10 +1984,9 @@
         });
 
 
-
-        /* =========================
+        /* ========================================
            HEADER SCROLL
-        ========================== */
+        ========================================= */
 
         const header =
             document.querySelector(".header");
