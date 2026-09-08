@@ -728,6 +728,7 @@ button {
     position: absolute;
 
     right: -20px;
+
     bottom: -20px;
 
     padding: 15px 20px;
@@ -906,7 +907,7 @@ button {
 
     justify-content: space-between;
 
-    align-items: end;
+    align-items: flex-end;
 
     gap: 50px;
 
@@ -1147,12 +1148,12 @@ button {
 ===================================================== */
 
 .music-video-area {
-    margin-top: 100px;
+    display: flex;
 
-    padding-top: 70px;
-
-    border-top:
-        1px solid var(--border);
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
 }
 
 
@@ -1183,55 +1184,54 @@ button {
 }
 
 
+/* YouTubeÉVÉáÅ[ÉgìÆâÊÇ3Ç¬â°ï¿Ç—Ç…Ç∑ÇÈê›íË */
 .music-video-content {
-    display: grid;
-
-    grid-template-columns:
-        350px 1fr;
-
-    gap: 60px;
-
+    display: flex;
+    justify-content: center;
     align-items: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 1000px;
+    box-sizing: border-box;
 }
-
 
 .youtube-short {
-    width: 100%;
-
-    max-width: 350px;
-
+    flex: 1 1 0;
+    max-width: 315px;
     aspect-ratio: 9 / 16;
-
-    margin: 0;
-
-    background: #000;
-
-    overflow: hidden;
-
-    box-shadow:
-        0 20px 50px rgba(0, 0, 0, 0.25);
+    position: relative;
 }
-
 
 .youtube-short iframe {
     width: 100%;
     height: 100%;
-
-    border: 0;
+    border: none;
 }
 
+@media (max-width: 768px) {
+    .music-video-content {
+        flex-direction: column;
+    }
+    .youtube-short {
+        width: 100%;
+        max-width: 360px;
+    }
+}
 
 .music-video-description {
-    max-width: 500px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    width: 100%;
 }
 
 
 .music-video-description p {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 
     color: var(--muted);
 
-    line-height: 2;
+    line-height: 1.8;
 }
 
 
@@ -1240,9 +1240,15 @@ button {
 
     align-items: center;
 
-    gap: 20px;
+    justify-content: center;
+
+    gap: 12px;
 
     padding-bottom: 8px;
+
+    color: inherit;
+
+    text-decoration: none;
 
     font-family: var(--display);
 
@@ -1266,6 +1272,10 @@ button {
         var(--gold-light);
 }
 
+.music-youtube-link span,
+.music-youtube-link strong {
+    font-family: inherit;
+}
 
 /* =====================================================
    MUSIC CLOSING
