@@ -676,7 +676,6 @@ button {
         );
 }
 
-
 .about-grid {
     display: grid;
 
@@ -688,11 +687,9 @@ button {
     align-items: center;
 }
 
-
 .about-text {
     max-width: 570px;
 }
-
 
 .about-text .lead {
     margin-bottom: 35px;
@@ -705,7 +702,6 @@ button {
     color: var(--gold-light);
 }
 
-
 .about-text p:not(.lead) {
     margin-bottom: 22px;
 
@@ -713,19 +709,21 @@ button {
         rgba(232, 227, 213, 0.75);
 }
 
-
+/* Image */
 .about-image {
     position: relative;
 }
 
-
 .about-image img {
-    aspect-ratio: 4 / 5;
+    display: block;
 
-    object-fit: cover;
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
 }
 
-
+/* Caption */
 .image-caption {
     position: absolute;
 
@@ -744,7 +742,6 @@ button {
 
     letter-spacing: 0.18em;
 }
-
 
 /* =====================================================
    02 MUSIC
